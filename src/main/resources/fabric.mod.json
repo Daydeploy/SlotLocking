@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "slotlocking",
+  "version": "${version}",
+  "name": "SlotLocking",
+  "description": "",
+  "authors": ["Day"],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/slotlocking/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.day.slotlocking.SlotLocking"
+    ]
+  },
+  "mixins": [
+    "slotlocking.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

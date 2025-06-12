@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.day.slotlocking.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayerEntityMixin",
+    "CreativeInventoryScreenMixin",
+    "HandledScreenMixin",
+    "MinecraftClientMixin",
+    "ScreenHandlerMixin",
+    "SlotMixin",
+    "accessor.CreativeSlotAccessor",
+    "accessor.KeyBindingAccessor",
+    "accessor.ServerWorldAccessor",
+    "accessor.SlotAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ]
+}
