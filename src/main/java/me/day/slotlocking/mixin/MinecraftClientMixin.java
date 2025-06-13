@@ -40,6 +40,6 @@ public class MinecraftClientMixin {
 
     @Inject(at = @At(value = "HEAD"), method = "doItemPick", cancellable = true)
     public void handleItemPick(CallbackInfo ci) {
-        SlotLocking.handleItemPick(Objects.requireNonNull(player).getInventory().selectedSlot, ci);
+        SlotLocking.handleItemPick(Objects.requireNonNull(player).getInventory().getSelectedSlot(), ci);
     }
 }
